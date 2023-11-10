@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="9.844">
+    <testcase classname="Search with Duck Duck Go" name="Successful phrase search with https://duckduckgo.com/" time="3.79">
+        <system-out><![CDATA[Given Page https://duckduckgo.com/ opened in browser........................passed
+When Phrase 'w pustyni i w puszczy' entered in search input box.............passed
+And Search button clicked...................................................passed
+Then First 5 search result text contain phrase 'w pustyni i w puszczy'......passed
+And Save screenshot.........................................................passed
+And Close browser...........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Search with Duck Duck Go" name="Successful phrase search with https://duckduckgo.com/ 2" time="2.789">
+        <system-out><![CDATA[Given Page https://duckduckgo.com/ opened in browser........................passed
+When Phrase 'pogoda' entered in search input box............................passed
+And Search button clicked...................................................passed
+Then First 2 search result text contain phrase 'pogoda'.....................passed
+And Save screenshot.........................................................passed
+And Close browser...........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Search with Duck Duck Go" name="Successful phrase search with https://duckduckgo.com/ 3" time="3.174">
+        <system-out><![CDATA[Given Page https://duckduckgo.com/ opened in browser........................passed
+When Phrase 'andrzej bobkowski' entered in search input box.................passed
+And Search button clicked...................................................passed
+Then First 2 search result text contain phrase 'andrzej bobkowski'..........passed
+And Save screenshot.........................................................passed
+And Close browser...........................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
