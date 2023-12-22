@@ -54,6 +54,10 @@
                     <systemPropertyVariables>
                         <browser>chrome</browser>
                     </systemPropertyVariables>
+                         <includes>
+                        <include>**/CucumberRunner*.java</include>
+                           <include>**/SearchWithDuckDuckGoTest.java</include>
+                    </includes>
                 </configuration>
             </plugin>
         </plugins>
