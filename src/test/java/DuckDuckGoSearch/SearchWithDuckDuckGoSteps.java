@@ -3,11 +3,11 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.junit.Assert;
 
 
 import java.io.File;
@@ -54,7 +54,7 @@ public class SearchWithDuckDuckGoSteps {
             String linkTextLower = textsFromResultsLinks.get(i).toLowerCase();
             String searchPhraseLower = searchPhrase.toLowerCase();
             if (!linkTextLower.contains(searchPhraseLower)) {
-                Assertions.fail(String.format("Search result should contain: %s, but was: %s", searchPhraseLower, linkTextLower));
+                Assert.fail(String.format("Search result should contain: %s, but was: %s", searchPhraseLower, linkTextLower));
             }
         }
     }
