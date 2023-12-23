@@ -6,9 +6,10 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-//import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.junit.Assert;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+//import org.openqa.selenium.firefox.FirefoxDriver;
 
 
 import java.io.File;
@@ -28,7 +29,9 @@ public class SearchWithDuckDuckGoSteps {
     // Step for opening the browser and navigating to the given URL
     @Given("Page {word} opened in browser")
     public void pageOpenedInBrowser(String url) {
-        this.driver = new FirefoxDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless=new");
+        this.driver = new ChromeDriver(options);
         this.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(8));
         this.driver.get(url);
         this.ddgMainPage = new DuckDuckGoMainPage(driver);
