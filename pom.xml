@@ -37,12 +37,12 @@
             <version>7.0.0</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>RELEASE</version>
-            <scope>test</scope>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.junit.jupiter</groupId>-->
+<!--            <artifactId>junit-jupiter</artifactId>-->
+<!--            <version>RELEASE</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
     </dependencies>
     <build>
         <plugins>
@@ -54,9 +54,9 @@
                     <systemPropertyVariables>
                         <browser>chrome</browser>
                     </systemPropertyVariables>
-                         <includes>
+                    <includes>
                         <include>**/CucumberRunner*.java</include>
-                           <include>**/SearchWithDuckDuckGoTest.java</include>
+                        <include>**/SearchWithDuckDuckGoTest.java</include>
                     </includes>
                 </configuration>
             </plugin>
