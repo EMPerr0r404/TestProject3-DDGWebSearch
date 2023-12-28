@@ -24,5 +24,5 @@ Feature: Search with Duck Duck Go
     Examples:
       | searchPhrase          | Positions |
       | w pustyni i w puszczy | 5         |
- #     | pogoda                | 2         |
- #     | Józef Piłsudski       | 2         |
+      | pogoda                | 2         |
+      | Józef Piłsudski       | 2         |
