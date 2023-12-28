@@ -33,6 +33,7 @@ public class SearchWithDuckDuckGoSteps {
     // Step for opening the browser and navigating to the given URL
     @Given("Page {word} opened in browser")
     public void pageOpenedInBrowser(String url) {
+        
  // System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
         // ChromeOptions options = new ChromeOptions();
         // options.addArguments("--headless");
@@ -42,9 +43,10 @@ public class SearchWithDuckDuckGoSteps {
          // System.setProperty("webdriver.gecko.driver","/usr/local/bin/??");
  
         FirefoxOptions options = new FirefoxOptions();
-        options.setHeadless(true);
-        WebDriver driver = new FirefoxDriver(options);
- 
+        options.addArguments("--headless");
+        this.driver = new FirefoxDriver(options);
+        // this.driver = new FirefoxDriver();
+     
         this.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(8));
         this.driver.get(url);
         this.ddgMainPage = new DuckDuckGoMainPage(driver);
