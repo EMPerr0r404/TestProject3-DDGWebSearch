@@ -2,10 +2,10 @@ Feature: Search with Duck Duck Go
 
 # This feature describes the behavior of successful phrase searches using DuckDuckGo.
 
-  Scenario Outline: Successful phrase search with https://duckduckgo.com/
+  Scenario Outline: Successful phrase search with https://duckduckgo.pl/
 
   # Given the DuckDuckGo search page is opened in the browser
-    Given Page https://duckduckgo.com/ opened in browser
+    Given Page https://duckduckgo.pl/ opened in browser
 
   # When a specific search phrase is entered in the search input box and the search button is clicked
     When Phrase '<searchPhrase>' entered in search input box
