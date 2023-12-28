@@ -15,7 +15,7 @@ Feature: Search with Duck Duck Go
     Then First <Positions> search result text contain phrase '<searchPhrase>'
 
   # And save a screenshot for verification purposes
-    And Save screenshot
+  # And Save screenshot
 
   # And close the browser
     And Close browser
