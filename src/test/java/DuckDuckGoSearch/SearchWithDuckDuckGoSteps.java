@@ -30,7 +30,7 @@ public class SearchWithDuckDuckGoSteps {
     // Step for opening the browser and navigating to the given URL
     @Given("Page {word} opened in browser")
     public void pageOpenedInBrowser(String url) {
-      //  System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+ System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
         // ChromeOptions options = new ChromeOptions();
         // options.addArguments("--headless");
         // this.driver = new ChromeDriver(options);
