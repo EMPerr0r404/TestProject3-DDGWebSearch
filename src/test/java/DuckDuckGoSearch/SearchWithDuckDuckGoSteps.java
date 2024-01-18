@@ -38,7 +38,7 @@ public class SearchWithDuckDuckGoSteps {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
         this.driver = new ChromeDriver(options);
-        this.driver = new ChromeDriver();
+        // this.driver = new ChromeDriver();
 
          // System.setProperty("webdriver.gecko.driver","/usr/local/bin/??");
  
