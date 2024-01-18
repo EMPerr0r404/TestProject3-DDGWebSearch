@@ -9,11 +9,11 @@ import org.openqa.selenium.WebDriver;
 
 import org.junit.Assert;
 
-// import org.openqa.selenium.chrome.ChromeDriver;
-// import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
+// import org.openqa.selenium.firefox.FirefoxDriver;
+// import org.openqa.selenium.firefox.FirefoxOptions;
 
 
 import java.io.File;
@@ -35,16 +35,16 @@ public class SearchWithDuckDuckGoSteps {
     public void pageOpenedInBrowser(String url) {
         
  // System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
-        // ChromeOptions options = new ChromeOptions();
-        // options.addArguments("--headless");
-        // this.driver = new ChromeDriver(options);
-        // this.driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
+        this.driver = new ChromeDriver(options);
+        this.driver = new ChromeDriver();
 
          // System.setProperty("webdriver.gecko.driver","/usr/local/bin/??");
  
-        FirefoxOptions options = new FirefoxOptions();
-        options.addArguments("--headless");
-        this.driver = new FirefoxDriver(options);
+        // FirefoxOptions options = new FirefoxOptions();
+        // options.addArguments("--headless");
+        // this.driver = new FirefoxDriver(options);
         // this.driver = new FirefoxDriver();
      
         this.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(8));
