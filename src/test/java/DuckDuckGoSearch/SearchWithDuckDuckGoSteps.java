@@ -38,14 +38,13 @@ public class SearchWithDuckDuckGoSteps {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
         this.driver = new ChromeDriver(options);
-        // this.driver = new ChromeDriver();
-
+ 
          // System.setProperty("webdriver.gecko.driver","/usr/local/bin/??");
  
         // FirefoxOptions options = new FirefoxOptions();
         // options.addArguments("--headless");
         // this.driver = new FirefoxDriver(options);
-        // this.driver = new FirefoxDriver();
+    
      
         this.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(8));
         this.driver.get(url);
